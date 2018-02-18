@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
     <head>
         <title>SkaldiFax's homepage</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -13,6 +17,33 @@
                 Welcome to SkaldiFax.github.io!
             </div>
             <img class="image" src="serg.webp" />
+        </div>
+        <div id="page">
+            <header>
+                <h1>Mortgage Calculator</h1>
+            </header>
+            <div class="content">
+                <div class="form">
+                    <div>
+                        <label>Principal:</label>
+                        <input type="text" id="principal" value="200000"/>
+                    </div>
+                    <div>
+                        <label>Years:</label>
+                        <input type="text" id="years" value="30"/>
+                    </div>
+                    <div>
+                        <label htmlFor="rate">Rate:</label>
+                        <input type="text" id="rate" value="5.0"/>
+                    </div>
+                    <div>
+                        <label htmlFor="calcBtn"></label>
+                        <button id="calcBtn">Calculate</button>
+                    </div>
+                </div>
+                <h2>Monthly Payment: <span id="monthlyPayment" class="currency"></span></h2>
+            </div>
+            <script src="js/main.js"></script>
         </div>
     </body>
 </html>

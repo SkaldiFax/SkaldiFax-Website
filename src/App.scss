@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Patua+One');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    background-color: #e2e2e2;
+    font-size: 14px;
+}
+
+#AppEntryPoint {
+    width: 100%;
+}
+
+.App {
+    width: 100%;
+}

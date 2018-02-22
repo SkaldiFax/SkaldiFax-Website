@@ -1,0 +1,33 @@
+.MoveCalculatorPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 64px 32px;
+
+    background-color: #e2e2e2;
+
+    .MoveCalculatorPage-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        max-width: 1200px;
+
+        .MoveCalculatorPage-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            width: 100%;
+            
+            margin-bottom: 32px;
+    
+            color: rgb(30, 30, 30);
+            font-family: 'Patua One', serif;    
+            font-size: 64px;
+        }
+    }
+}

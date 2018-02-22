@@ -1,0 +1,86 @@
+.CharacterSelector {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;    
+
+    margin: 0 16px;
+
+    .display {
+        position: relative;
+        
+        .background {
+            display: block;
+
+            width: 100%;       
+        }
+
+        .text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        
+            position: absolute;
+        
+            bottom: 0;
+            width: 100%;
+        
+            color: white;
+            font-family: 'Patua One', serif;    
+            font-size: 64px;
+        }
+
+        &:hover, &:focus {
+            .background {
+                filter: brightness(70%);
+            }
+        }
+    }
+
+    .information {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        
+        padding: 16px 24px;
+
+        background-color: rgb(200, 200, 200);
+
+        .text {
+            flex-grow: 1;
+
+            padding-right: 32px;
+
+            color: rgb(30, 30, 30);
+            font-size: 14px;
+            line-height: 18px;   
+            font-family: 'Lato', sans-serif;            
+        }
+
+        .percent {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            color: rgb(128, 0, 0);
+            font-family: 'Patua One', serif;    
+            
+            .number {
+                font-size: 48px;
+                line-height: 48px;
+            }
+            
+            .symbol {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &:nth-child(1) {
+        margin-left: 0;
+    }
+    
+    &:nth-child(2) {
+        margin-right: 0;
+    }
+}

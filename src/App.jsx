@@ -1,6 +1,8 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import Header from './App/Shared/Header.jsx';
+import Footer from './App/Shared/Footer.jsx';
 import HomePage from './App/HomePage.jsx';
 import MoveCalculatorPage from './App/MoveCalculatorPage.jsx';
 
@@ -11,7 +13,11 @@ export default class App extends React.Component {
         return (
             <div className="App">
                 <Header />
-                <MoveCalculatorPage />
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/move-calculator" component={MoveCalculatorPage} />
+                </Switch>
+                <Footer />
             </div>
         );
     }

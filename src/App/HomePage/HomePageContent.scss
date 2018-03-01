@@ -1,0 +1,23 @@
+.HomePageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px 48px;
+
+    background-color: rgba(16, 16, 16, 1);
+}
+
+.HomePageContent-text {
+    color: #CCC;
+    font-family: 'Jura';
+    text-align: center;
+}
+
+.HomePageContent-image {
+    display: block;
+
+    width: 375px;
+    max-width: 80vw;
+}

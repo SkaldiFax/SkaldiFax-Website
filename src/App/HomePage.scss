@@ -3,21 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: #e2e2e2;
-    font-size: 14px;
-}
-
-.HomePage-title {
-    color: rgb(219, 242, 253);
-    font-size: 2.5em;
-    letter-spacing: 0.2em;
-    text-align: center;
-}
-
-.HomePage-image {
-    display: block;
-
-    width: 375px;
-    max-width: 80vw;
+    flex-grow: 1;
+    
+    width: 100%;
 }
